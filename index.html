@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>nisimaki.net</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="css/normalize.css" media="all">
+<link rel="stylesheet" href="css/style.css" media="all">
+<!-- <script src="js/XXXX.js"></script> -->
+<script
+ src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" type="text/javascript"></script>
+ <script src="js/jquery.instagram.js" type="text/javascript"></script>
+ <script>
+$(function() {
+  $('.instagram').instagram({
+  show: 3, //表示させる数
+  clientId: "be9139929b6043dc97628160ccb0190f",
+  userId: "self",
+  image_size: 'low_resolution',
+  accessToken: "3774962.be91399.b834ef34da2b4c34b00fff7d417a13d7"
+  });
+});
+</script>
+</head>
+<body>
+
+<h1>nisimaki.net</h1>
+
+
+<div id="main">
+<div id="twt">
+<h2><a href="https://twitter.com/nisimaki" target="_blank">Twitter</a></h2>
+	<a class="twitter-timeline" href="https://twitter.com/nisimaki" data-widget-id="331244793730572293" data-tweet-limit="5">@nisimaki からのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+<div id="tmb">
+	<h2><a href="http://nisimaki-plus.tumblr.com/" target="_blank">Tumblr</a></h2>
+<script type="text/javascript">//JSONデータの取得と表示件数の指定
+    $.getJSON("http://nisimaki-plus.tumblr.com/api/read/json?num=1&callback=?", function(data) {
+    	console.log(data.posts[0]['regular-body']);
+    	$('div#tumblrTxt').html(data.posts[0]['regular-body']);
+    });
+</script>
+<div id="tumblrTxt"></div>
+</div>
+
+<div id="ins" class="instagram">
+  <h2><a href="http://instagram.com/nisimaki/" target="_blank">Instagram</a></h2>
+</div>
+
+</div><!-- /main -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-40884814-1', 'nisimaki.net');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

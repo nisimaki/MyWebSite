@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+body {
+	box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.2) inset;
+	padding: 10px;
+	background: #EDECE9;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: #555;
+}
+h1 {
+/*	font-size: 2em;*/
+margin: 0 0 10px;
+}
+h1:first-letter {
+	font-size: 2em;
+}
+
+div#twt,
+div#tmb,
+div#ins {
+	background: #fff;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+img.instagram-image {
+	width: 276px;
+}
+
+@media screen and (min-device-width: 321px) {
+	h1 {
+		font-size: 4em;
+	}
+	div#main {
+		width: 100%;
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+	}
+	div#twt {
+		width: 300px;
+		margin-right: 10px;
+	}
+	div#tmb {
+		/*width: 500px;*/
+		margin-right: 10px;
+		-webkit-box-flex: 1.0;
+    	-moz-box-flex: 1.0;
+    	box-flex: 1.0;
+	}
+}
+
